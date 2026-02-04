@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .page{
+            display:grid;
+            grid-template-columns: 220px 1fr 1fr;
+            grid-template-rows: auto auto 1fr auto;
+            min-height: 100vh;
+             grid-template-areas: 
+            "header header header"
+            "navbar navbar navbar"
+            "sidebar main main2"
+            "footer footer footer"
+        }
+        .header{
+            grid-area: header;
+            padding: 20px;
+            background-color: blue;
+        }
+        .navbar{
+            grid-area: navbar;
+            padding: 20px;
+            background-color: aquamarine;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            padding: 20px;
+            background-color: blueviolet;
+        }
+        .main{
+            grid-area: main;
+            padding: 20px;
+            background-color: greenyellow;
+        }
+        .main2{
+            grid-area: main2;
+            padding: 20px;
+            background-color: brown;
+        }
+        .footer{
+             grid-area: footer;
+             padding: 20px;
+             background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <header class="header">header</header>
+    <nav class="navbar">navbar</nav>
+    <aside class="sidebar">aside</aside>
+    <main class="main">main</main>
+    <main class="main2">main2</main>
+    <footer class="footer">footer</footer>  
+</div>
+    
+</body>
+</html>

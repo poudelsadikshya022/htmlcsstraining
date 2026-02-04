@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Exam Form</h1>
+      <form action="submit.html" method="post">
+        <p>
+            <label for="username">username:</label>
+            <input type="text" name="username" id="username"placeholder="Enter username here">
+        </p>
+        <!-- Text input -->
+       
+        <p>
+            <label for="password">password:</label>
+            <input type="password" name="password" id="password"placeholder="Enter password here">
+        </p>
+        <!-- password input -->
+        <p>
+            <label for="Email">Email:</label>
+            <input type="email"id="email"placeholder="Enter email here"required>
+        </p>
+        <p>
+            <label for="Gender">Gender:</label>
+            <input type="radio"name="Gender"id="gender_m"value="male">male
+            <input type="radio"name="Gender"id="gender_f"value="female">female
+        </p>
+        <p>
+            <!-- check boxes -->
+         <label for="hobbies">hobbies</label> <br>
+         <input type="checkbox"name="checkbox"id="checkbox_1"value="reading">reading <br>
+         <input type="checkbox"name="checkbox"id="checkbox_2"value="travelling">travelling <br>
+         <input type="checkbox"name="checkbox"id="checkbox_3"value="coding">coding <br>
+         <input type="checkbox"name="checkbox"id="checkbox_3"value="photography">photography <br>
+        </p>
+        <P>
+            <label for="Country">Country:</label>
+            <select name="country" id="country">
+            <option value="usa">USA</option>
+            <option value="argentina">Argentina</option>
+            <option value="india">India</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+          </select>
+        </P>
+        <p>
+            <label for="description">Write about yourself: </label> <br>
+            <textarea name="description" id="description" rows="5"cols="50"> </textarea>
+        </p>
+    
+        <p> 
+            <button type="submit">submit</button>
+        </p>
+      </form>
+    
+</body>
+</html>

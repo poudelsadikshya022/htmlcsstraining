@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+        <style>
+    body{
+        margin: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .header{
+        background-color: black;
+        padding: 10px;
+        columns: white;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+    }
+    .logo{
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      display: inline;
+      margin-right: 20px;
+    }
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+    .location{
+        font-size: 12px;
+    }
+    .search{
+        flex: 1;
+        display: flex;
+    }
+    .search input{
+        padding: 6px;
+        width: 100%;
+        border: none;
+        border-radius: 4px 0 0 4px;
+    }
+    .search button{
+        padding: 6px 10px;
+        border: none;
+        background-color: orange;
+        cursor: pointer;
+    }
+    .search button :hover{
+        color: darkorange
+        
+    }
+    .menu ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: orange;
+    }
+    .menu li{
+        margin: 15px;
+    }
+    .menu a{
+        color: orange;
+        text-decoration: underline;
+    }
+    .logo:hover{
+        cursor: pointer;
+        color: orange;
+    }
+    .location:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: darkorange;
+    }
+    .menu a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    }
+    .menu a:hover{
+        color: orange;
+        text-decoration: underline;
+
+    }
+    .menu a,
+    .search button,
+    .logo,
+    .search input{
+        transition: all 1s ease-in-out;
+    }
+    .search input:focus{
+        border: 2px solid orange;
+    }
+    .search{
+        display: inline-block;
+    }
+.search input{
+    padding: 5px;
+    width: 200px;
+
+}
+.menu{
+    display: inline-block;
+    float: right;
+}
+.form-wrap{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.demo-form{
+    background-color: #f5f5f5;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
+}
+.demo-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label{
+    display:block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.demo-form input,
+.demo-form select{
+    width: 100%;
+    padding:8px;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+}
+.inline{
+    display: flex;
+    gap:10px;
+}
+.demo-form button{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.demo-form input :focus,
+.demo-form select :focus{
+    border: 2px solid orange;
+    outline: none;
+
+}
+.demo-form button:hover{
+    background-color: orange;
+    transform: scale(0.85);
+}
+.demo-form button{
+    transition: all 2s ease;
+}
+footer{
+    background-color: lavender;
+    color: #f5f5f5;
+    font-size: 10px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+.footer-left,
+.footer-right,
+.footer-social,
+.footer-center{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+   .footer a{
+    color: white;
+    text-decoration: none;
+    transition: all 1s ease;
+   }
+   .footer-center a:hover{
+    text-decoration: underline;
+    color: aquamarine;
+    text-shadow: 
+    0 0 4px orange,
+    0 0 8px orange;
+   }
+   .footer-social{
+    font-size: 14px;
+   }
+   .footer-social a:hover{
+    transform: scale(1,2);
+   }
+
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <div class="header">
+        <!-- Logo section -->
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon_logo" srcset="">
+            <span>Amazon</span>
+        </div>
+        <!-- Location -->
+        <div class=" Location">
+            <small>Deliver to</small>
+            <strong>Nepal</strong>
+
+        </div>
+        <!-- Search form -->
+         <form class="Search">
+            <input type="text" name="Search" id="Search" placeholder="Search">
+            <button type="submit">Search</button>
+         </form>
+
+        <nav class="menu"> 
+        <ul>
+            <li> <a href="#">Account</a></li>
+            <li><a href="#"></a>Orders</li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+
+         </nav>
+    </div>
+        <div class="form-wrap">
+          <form action="" class="demo-form">
+            <h2>Amazon Registration Form</h2>   
+         <!--Text input-->
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="full-name" placeholder="Enter your full name here">
+                </div>
+           <!--Email input-->
+           <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email..">
+           </div>
+        <!-- Date input -->
+         <div class="form-group">
+            <label for="date">Date of Birth</label>
+            <input type="date" placeholder="Enter your date of birth.."> 
+         </div>
+         <div class="form-group" >
+         <label for="country">Country</label>
+         <select name="country" id="country">
+            <option value="nepal">Nepal</option>
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+            <option value="uk">Uk</option>
+            <option value="canada">Canada</option>
+         </select>
+         </div>
+         <!--radio input-->
+         <div class="Form-group">
+            <div class="inline">
+                <label for="male">
+                <input type="radio" name="male" id="male">Male
+                </label>
+                <label for="male">
+                <input type="radio" name="female" id="female">Female
+                </label>
+                </div>
+            </div>
+                <div class="Form-group">
+                    <div class="inline">
+                        <label for="skills">Skills
+                           <input type="checkbox" name="checkbox" id="html">HTML
+                           </label>
+                           <label for="CSS">
+                           <input type="checkbox" name="css" id="css">CSS
+                           </label>
+                           <label for="JS">
+                           <input type="checkbox" name="JS" id="JS">JS
+                           </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="skill-label">
+                    <input type="range" min="1" max="10">
+                    </label>
+                </div>
+                <button type="submit">Register</button>
+            </div>
+         </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <span>© 2024 Amazon. All rights reserved.</span>
+        </div>
+        <div class="footer-center">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Label</a>
+        </div>
+        <div class="footer-center">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Youtube"><i class="fa-brands fa-square-youtube"></i></a>
+            </div>
+            <div class="footer-center">
+                <span>Np Nepal</span>
+                <span></span>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
